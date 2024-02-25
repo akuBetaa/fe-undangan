@@ -1,0 +1,12 @@
+# Contoh aturan-aturan di dalam .gitignore
+
+# Direktori/node_modules
+node_modules
+
+# Berkas yang dihasilkan oleh sistem operasi
+Thumbs.db
+.DS_Store
+
+# Berkas log atau backup
+*.log
+*.bak
