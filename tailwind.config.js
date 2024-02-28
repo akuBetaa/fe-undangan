@@ -6,11 +6,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        'roboto' : ['Roboto', 'sans-serif'],
         'poppins': ['Poppins', 'sans-serif'],
         'jura': ['Jura', 'sans-serif'],
         'elsie': ['Elsie', 'cursive'],
         'playfair': ['Playfair Display', 'serif'],
-        'sacramento' : ['sacramento', 'cursive'],
+        'sacramento' : ['Sacramento', 'cursive'],
+        'dancing' : ['Dancing Script', 'cursive']	
       },
       colors: {
         'primary' : '#3B4D65',
