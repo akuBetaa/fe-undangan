@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="./output.css" rel="stylesheet" />
-  <!-- <link rel='stylesheet' href=' https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css '> -->
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-straight/css/uicons-regular-straight.css" />
 </head>
 
 <body class="bg-primary">
@@ -19,25 +20,31 @@
     <div class="">
       <!-- heading -->
       <div class="relative min-h-screen">
+        <!-- backgound foto -->
         <img src="./assets/image/catin-1.jpg" class="min-h-screen max-h-screen w-full object-cover absolute z-0"
           alt="" />
 
+        <!-- gradient  -->
         <div class="absolute inset-0 z-10 grid grid-rows-3">
           <div class="bg-gradient-to-b from-primary to-transparent bg-opacity-100"></div>
           <div></div>
           <div class="bg-gradient-to-t from-primary to-transparent bg-opacity-100"></div>
         </div>
 
-        <div class="p-5 relative z-20 text-white">
+        <!-- konten  -->
+        <div class="p-5 relative z-20 text-white min-h-screen">
           <p class="mt-8 text-base text-center font-semibold">
             WE ARE GETTING MERRIED
           </p>
-          <h1 class="py-4 text-3xl font-bold text-center font-elsie">
+          <h1 class="py-4 text-3xl font-bold text-center font-sacramento">
             KAYLA & RAFFA
           </h1>
           <p class="text-center text-base font-semibold">09.04.2024</p>
 
-          <!-- <i class="fi fi-rs-angle-double-small-down"></i> -->
+          <div class="flex justify-center items-end">
+            <i class="fi fi-rs-angle-double-small-down text-3xl"></i>
+            <i class="fi fi-rs-arrow-down"></i>
+          </div>
         </div>
       </div>
 
@@ -110,50 +117,66 @@
       </div>
 
       <!-- hitung mundur  -->
-      <div class="relative min-h-screen bg-[url('./assets/image/catin-1.jpg')] bg-cover bg-center">
-        <!-- backgorun  -->
+      <div class="relative bg-[url('./assets/image/catin-1.jpg')] bg-cover bg-center">
+        <!-- backgorund  -->
         <div class="absolute h-full inset-0 z-0">
-          <!-- <div class="grid grid-cols-2 h-24 absolute inset-0 z-0">
-            <div class="bg-white rounded-br-full h-full">dfgsdgssfgsg</div>
-            <div class="bg-white rounded-bl-full h-full"></div>
-          </div> -->
           <svg xmlns="http://www.w3.org/2000/svg" class="absolute inset-0 z-0" viewBox="0 0 1440 320">
-            <path fill="#ffffff" fill-opacity="1" d="M0,224L26.7,208C53.3,192,107,160,160,149.3C213.3,139,267,149,320,165.3C373.3,181,427,203,480,197.3C533.3,192,587,160,640,154.7C693.3,149,747,171,800,165.3C853.3,160,907,128,960,133.3C1013.3,139,1067,181,1120,213.3C1173.3,245,1227,267,1280,277.3C1333.3,288,1387,288,1413,288L1440,288L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path>
+            <path fill="#ffffff" fill-opacity="1"
+              d="M0,224L26.7,208C53.3,192,107,160,160,149.3C213.3,139,267,149,320,165.3C373.3,181,427,203,480,197.3C533.3,192,587,160,640,154.7C693.3,149,747,171,800,165.3C853.3,160,907,128,960,133.3C1013.3,139,1067,181,1120,213.3C1173.3,245,1227,267,1280,277.3C1333.3,288,1387,288,1413,288L1440,288L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z">
+            </path>
           </svg>
-          <div class="bg-gradient-to-b from-primary to-transparent bg-opacity-100 min-h-screen"></div>
+
+          <div class="bg-gradient-to-t from-primary to-transparent bg-opacity-100 h-full"></div>
           <!-- <div class="bg-gradient-to-t from-primary to-transparent bg-opacity-100 min-h-screen"></div> -->
+          <!-- gradient  -->
+          <!-- <div class="absolute inset-0 z-10">
+          <div class="bg-gradient-to-b from-primary to-transparent bg-opacity-100"></div>
+          <div></div>
+          <div class="bg-gradient-to-t from-primary to-transparent bg-opacity-100"></div>
+        </div> -->
         </div>
 
         <!-- konten  -->
         <div class="relative z-10 flex flex-col items-center">
           <div class="text-white text-center mt-40">
             <p class="text-base">
-              Kami akan menikah, <br> dan kami ingin Anda menjadi bagian dari hari <br> istimewa kami
+              Kami akan menikah, <br />
+              dan kami ingin Anda menjadi bagian dari hari <br />
+              istimewa kami
             </p>
 
             <!-- bagian hitung mundur  -->
             <div class="grid grid-cols-4 gap-4 py-4">
-              <div class="bg-white bg-opacity-30  p-3 rounded-xl">
+              <div class="bg-white bg-opacity-30 p-3 rounded-xl">
                 <h1 class="font-bold text-2xl">00</h1>
                 <p>Hari</p>
               </div>
-              <div class="bg-white bg-opacity-30  p-3 rounded-xl">
+              <div class="bg-white bg-opacity-30 p-3 rounded-xl">
                 <h1 class="font-bold text-2xl">00</h1>
                 <p>Hari</p>
               </div>
-              <div class="bg-white bg-opacity-30  p-3 rounded-xl">
+              <div class="bg-white bg-opacity-30 p-3 rounded-xl">
                 <h1 class="font-bold text-2xl">00</h1>
                 <p>Hari</p>
               </div>
-              <div class="bg-white bg-opacity-30  p-3 rounded-xl">
+              <div class="bg-white bg-opacity-30 p-3 rounded-xl">
                 <h1 class="font-bold text-2xl">00</h1>
                 <p>Hari</p>
               </div>
             </div>
-            
-            <p class="font-semibold">Rabu, 9 April 2024</p>
+
+            <p class="font-semibold my-2">Rabu, 9 April 2024</p>
+            <button class="hover:bg-primary px-4 py-2 rounded-full text-white bg-cyan-800 mt-3 mb-10">
+              <img src="" alt="" />
+              Save The Date
+            </button>
           </div>
         </div>
+      </div>
+
+      <!-- tanggal akad  -->
+      <div class="min-h-screen px-5 py-8">
+        <p class="text-white text-center italic text-3xl font-sacramento">Save The Date</p>
       </div>
     </div>
   </div>

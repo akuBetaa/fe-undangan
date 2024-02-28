@@ -10,6 +10,7 @@ module.exports = {
         'jura': ['Jura', 'sans-serif'],
         'elsie': ['Elsie', 'cursive'],
         'playfair': ['Playfair Display', 'serif'],
+        'sacramento' : ['sacramento', 'cursive'],
       },
       colors: {
         'primary' : '#3B4D65',
