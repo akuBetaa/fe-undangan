@@ -5,7 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="./output.css" rel="stylesheet" />
-   
+
+  <!-- Flowbite -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
 
   <link rel="stylesheet"
     href="https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-straight/css/uicons-regular-straight.css" />
@@ -149,20 +151,20 @@
             </p>
 
             <!-- bagian hitung mundur  -->
-            <div class="grid grid-cols-4 gap-4 py-4">
-              <div class="bg-white bg-opacity-30 p-3 rounded-xl">
+            <div class="grid grid-cols-4 gap-4 py-4 text-primary">
+              <div class="bg-white opacity-65 p-3 rounded-xl">
                 <h1 class="font-bold text-2xl">00</h1>
                 <p>Hari</p>
               </div>
-              <div class="bg-white bg-opacity-30 p-3 rounded-xl">
+              <div class="bg-white opacity-65 p-3 rounded-xl">
                 <h1 class="font-bold text-2xl">00</h1>
                 <p>Hari</p>
               </div>
-              <div class="bg-white bg-opacity-30 p-3 rounded-xl">
+              <div class="bg-white opacity-65 p-3 rounded-xl">
                 <h1 class="font-bold text-2xl">00</h1>
                 <p>Hari</p>
               </div>
-              <div class="bg-white bg-opacity-30 p-3 rounded-xl">
+              <div class="bg-white opacity-65 p-3 rounded-xl">
                 <h1 class="font-bold text-2xl">00</h1>
                 <p>Hari</p>
               </div>
@@ -223,21 +225,182 @@
       </div>
 
       <!-- Gallery  -->
-      <div class="min-h-screen relative bg-white">
+      <div class="relative bg-white">
         <div class="absolute h-full inset-0 z-10">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3b4d65" fill-opacity="1" d="M0,256L30,266.7C60,277,120,299,180,272C240,245,300,171,360,149.3C420,128,480,160,540,176C600,192,660,192,720,176C780,160,840,128,900,128C960,128,1020,160,1080,165.3C1140,171,1200,149,1260,154.7C1320,160,1380,192,1410,208L1440,224L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#3b4d65" fill-opacity="1"
+              d="M0,256L30,266.7C60,277,120,299,180,272C240,245,300,171,360,149.3C420,128,480,160,540,176C600,192,660,192,720,176C780,160,840,128,900,128C960,128,1020,160,1080,165.3C1140,171,1200,149,1260,154.7C1320,160,1380,192,1410,208L1440,224L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z">
+            </path>
           </svg>
         </div>
 
         <!-- Foto  -->
         <div class="relative z-20 p-5">
-          <div class="mt-28">
-            <h1>Our Momen</h1>
+          <div class="mt-28 text-center">
+            <h1 class="font-sacramento text-5xl font-medium py-3">Our Momen</h1>
+
+            <div id="default-carousel" class="relative w-full py-3" data-carousel="slide">
+              <!-- Carousel wrapper -->
+              <div class="relative h-96 overflow-hidden rounded-lg md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img src="./assets/image/catin-1.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img src="./assets/image/prewed-1.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img src="./assets/image/prewed-2.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img src="./assets/image/catin-1.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img src="./assets/image/prewed-1.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+              </div>
+              <!-- Slider indicators -->
+              <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                  data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                  data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                  data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                  data-carousel-slide-to="3"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                  data-carousel-slide-to="4"></button>
+              </div>
+              <!-- Slider controls -->
+              <button type="button"
+                class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev>
+                <span
+                  class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                  <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M5 1 1 5l4 4" />
+                  </svg>
+                  <span class="sr-only">Previous</span>
+                </span>
+              </button>
+              <button type="button"
+                class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next>
+                <span
+                  class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                  <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m1 9 4-4-4-4" />
+                  </svg>
+                  <span class="sr-only">Next</span>
+                </span>
+              </button>
+            </div>
+
+            <div class="">
+              <iframe class="w-full h-full rounded-xl"
+                src="https://www.youtube.com/embed/OhB7KY7zUu8?si=c5pSENc_Q_4B8fql" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Perjalanan Cinta -->
+      <div class="relative min-h-screen">
+        <!-- backgorund  -->
+        <div class="absolute h-full inset-0 z-0">
+          <svg xmlns="http://www.w3.org/2000/svg" class="absolute inset-0 z-0" viewBox="0 0 1440 320">
+            <path fill="#ffffff" fill-opacity="1"
+              d="M0,224L26.7,208C53.3,192,107,160,160,149.3C213.3,139,267,149,320,165.3C373.3,181,427,203,480,197.3C533.3,192,587,160,640,154.7C693.3,149,747,171,800,165.3C853.3,160,907,128,960,133.3C1013.3,139,1067,181,1120,213.3C1173.3,245,1227,267,1280,277.3C1333.3,288,1387,288,1413,288L1440,288L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z">
+            </path>
+          </svg>
+        </div>
+
+        <!-- Konten Perjalanan Cinta  -->
+        <div class="relative z-10 p-5">
+          <div class="mt-28 text-white text-center">
+            <h1 class="font-sacramento font-medium text-5xl">Love Story</h1>
+
+            <div class="mt-7 p-5 text-primary">
+              <ol class="relative border-s border-gray-200">
+                <li class="mb-10 ms-6">
+                  <span class="absolute flex items-center mt-2 justify-center w-6 h-6 bg-white rounded-full -start-3 ring-8 ring-white ">
+                    <i class="fi fi-rs-heart text-primary text-2xl pt-3"></i>
+                  </span>
+                  <div class="items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:flex">
+                    <img src="./assets/image/catin-1.jpg" class="rounded-xl h-[300px] w-full object-cover" alt="catin">
+                    <div class="pt-4 text-start">
+                      <h1 class="font-sacramento font-semibold text-3xl">Awal Pertemuan</h1>
+                      <p class="font-medium text-sm">09.05.2016</p>
+                      <p class="text-sm">Berawal dari pertemuan diruang kelas di mana saja, lanjut ke online</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="mb-10 ms-6">
+                  <span class="absolute flex items-center mt-2 justify-center w-6 h-6 bg-white rounded-full -start-3 ring-8 ring-white ">
+                    <i class="fi fi-rs-heart text-primary text-2xl pt-3"></i>
+                  </span>
+                  <div class="items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:flex">
+                    <img src="./assets/image/catin-1.jpg" class="rounded-xl h-[300px] w-full object-cover" alt="catin">
+                    <div class="pt-4 text-start">
+                      <h1 class="font-sacramento font-semibold text-3xl">Awal Pertemuan</h1>
+                      <p class="font-medium text-sm">09.05.2016</p>
+                      <p class="text-sm">Berawal dari pertemuan diruang kelas di mana saja, lanjut ke online</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="mb-10 ms-6">
+                  <span class="absolute flex items-center mt-2 justify-center w-6 h-6 bg-white rounded-full -start-3 ring-8 ring-white ">
+                    <i class="fi fi-rs-heart text-primary text-2xl pt-3"></i>
+                  </span>
+                  <div class="items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:flex">
+                    <img src="./assets/image/catin-1.jpg" class="rounded-xl h-[300px] w-full object-cover" alt="catin">
+                    <div class="pt-4 text-start">
+                      <h1 class="font-sacramento font-semibold text-3xl">Awal Pertemuan</h1>
+                      <p class="font-medium text-sm">09.05.2016</p>
+                      <p class="text-sm">Berawal dari pertemuan diruang kelas di mana saja, lanjut ke online</p>
+                    </div>
+                  </div>
+                </li>         
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Komentar Harapan  -->
+      <div class="min-h-screen">
+        <div class="p-5">
+          <h1 class="text-center text-5xl font-sacramento text-white">Wishes</h1>
+
+          <div class="bg-white rounded-lg my-5 p-3">
+            fs
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Flowbite  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
 </body>
 
 </html>
