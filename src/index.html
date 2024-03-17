@@ -8,26 +8,25 @@
 
   <!-- Flowbite -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
-
-  <link rel="stylesheet"
-    href="https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-straight/css/uicons-regular-straight.css" />
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-straight/css/uicons-regular-straight.css" />
   <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-rounded/css/uicons-thin-rounded.css" />
-  <link rel="stylesheet"
-    href="https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-straight/css/uicons-regular-straight.css" />
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-straight/css/uicons-regular-straight.css" />
 </head>
 
 <body class="bg-primary font-roboto">
   <div class="lg:grid lg:grid-cols-3 lg:min-h-screen">
     <!-- Image md  -->
     <div class="hidden md:flex md:col-span-2">
-      <!-- Image  -->
-      <img src="./assets/image/catin-1.jpg" class="min-h-screen max-h-screen w-full object-cover" alt="img-pengantin" />
-
-      <!-- <div class="bg-primary w-full"></div> -->
+      <div class="sticky top-0 left-0 w-screen h-screen overflow-hidden">
+        <div class="w-full h-full bg-gray-200">
+          <img src="./assets/image/catin-1.jpg" class="object-cover w-full h-screen" />
+        </div>
+      </div>
     </div>
 
     <!-- Konten  -->
-    <div class="">
+    <div class="bg-primary">
       <!-- heading -->
       <div class="relative min-h-screen">
         <!-- backgound foto -->
@@ -416,9 +415,17 @@
       </div>
 
       <!-- Komentar Harapan  -->
-      <div class="min-h-screen">
+      <div class="relative min-h-screen bg-primary">
+        <!-- backgorund  -->
+        <div class="absolute h-full inset-0 z-0">
+          <div class="bg-primary"></div>
+          <!-- <div class="bg-gradient-to-b from-primary to-transparent bg-opacity-100 h-screen"></div> -->
+        </div>
+
+        <div class="relative z-10"></div>
+
         <!-- Komentar Harapan  -->
-        <div class="p-7">
+        <div class="p-7 relative z-10">
           <h1 class="text-center text-5xl font-sacramento text-white">
             Wishes
           </h1>
@@ -458,20 +465,70 @@
         </div>
 
         <!-- Transfer  -->
-        <div>
-           <h1></h1>
+        <div class="p-7 relative z-10">
+          <h1 class="font-sacramento text-4xl text-center text-white">
+            Gift
+          </h1>
+          <p class="text-center text-xs text-white py-5">
+            Doa Restu Anda merupakan karunia yang sangat berarti bagi kami. <br>
+            Dan jika memberi adalah ungkapan tanda kasih, Anda dapat memberi
+            kado secara cashless.
+          </p>
+
+          <div class="flex flex-col gap-4 p-4">
+            <div class="bg-white p-6 rounded-lg">
+              <div class="flex justify-end items-end">
+                <img src="./assets/icons/logo-bca.svg" class="w-20 items-end">
+              </div>
+              <img src="./assets/icons/chip.png" class="w-10 mb-3">
+              
+              <p class="text-xl font-jura">0123456789</p>
+              <p class="text-xl font-jura">Meri Sri Anjani</p>
+              
+              <button class="bg-gray-500 hover:bg-gray-600 text-white p-2 rounded-lg text-xs mt-3 copy-button" data-text="0123456789">
+                <i class="fi fi-ss-copy-alt"></i>
+                Salin No. Rekening
+              </button>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg">
+              <img src="./assets/icons/logo-dana.png" class="w-32 mb-3">
+              
+              <p class="text-xl font-jura">0123456789</p>
+              <p class="text-xl font-jura">Meri Sri Anjani</p>
+              
+              <button class="bg-gray-500 hover:bg-gray-600 text-white p-2 rounded-lg text-xs mt-3 copy-button" data-text="0123456789 - Dana">
+                <i class="fi fi-ss-copy-alt"></i>
+                Salin No. Rekening
+              </button>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg flex flex-col items-center">
+              <i class="fi fi-rs-gift text-4xl"></i>
+              
+              <p class="text-sm font-jura">Kayla Natasya Putri Kencana</p>
+              <p class="text-sm font-jura">Jl. Pegangsaan Timur No.53 Jakarta Timur</p>
+              
+              <button class="bg-gray-500 hover:bg-gray-600 text-white p-2 rounded-lg text-xs mt-3 copy-button" data-text="Nama : Kayla Natasya Putri Kencana Alamat : Pegangsaan Timur No.53 Jakarta Timur">
+                <i class="fi fi-ss-copy-alt"></i>
+                Salin Alamat
+              </button>
+            </div>
+          </div>
+
         </div>
       </div>
 
       <!-- Footer  -->
       <div class="relative bg-[url('./assets/image/catin-1.jpg')] bg-cover bg-center">
-        <div class="min-h-screen"></div>
+        <div class="h-72"></div>
       </div>
     </div>
   </div>
 
   <!-- Flowbite  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
